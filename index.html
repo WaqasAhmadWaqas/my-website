@@ -9,46 +9,55 @@
       background-color: #222; 
       color: white; 
       padding-top: 50px; 
+      margin: 0;
     }
     h1 { color: #4CAF50; }
-    .ad-container {
-      margin-top: 40px;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
     }
-    .ad-button {
+    .ad-box {
+      margin: 30px auto;
+      background: #fff; /* Ad ka background white rakha hai taake clear dikhe */
+      border-radius: 8px;
+      padding: 10px;
       display: inline-block;
-      background-color: #4CAF50;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #e50914; /* Red button */
       color: white;
-      padding: 15px 30px;
+      padding: 15px 40px;
       text-decoration: none;
       font-size: 18px;
-      border-radius: 8px;
-      margin: 10px;
+      border-radius: 50px;
+      margin-top: 20px;
       font-weight: bold;
-      border: none;
-      cursor: pointer;
-    }
-    .ad-button:hover {
-      background-color: #45a049;
     }
   </style>
 </head>
 <body>
 
-  <h1>Assalam o Alaikum!</h1>
-  <p>Yeh meri pehli free website hai jo GitHub par live hai.</p>
+  <div class="container">
+    <h1>Assalam o Alaikum!</h1>
+    <p>Yeh meri pehli free website hai jo GitHub par live hai.</p>
 
-  <div class="ad-container">
-    <h3>👇 Niche diye gaye links par click karein 👇</h3>
-    
-    <!-- Pehla Link (uplcm) -->
-    <a href="https://uplcm.com/4/12210216" class="ad-button" target="_blank" rel="nofollow">
-      Click Here 1
+    <!-- 🖼️ NATIVE BANNER AD (Yeh automatically tasveer aur text show karega) 🖼️ -->
+    <div class="ad-box">
+      <script async="async" data-cfasync="false" src="https://bauval.org/21/7e8ec05885777dd5efe1e4fe13046c71"></script>
+      <div id="container-7e8ec05885777dd5efe1e4fe13046c71"></div>
+    </div>
+    <!-- 🖼️ AD KHATAM 🖼️ -->
+
+    <br><br>
+
+    <!-- 🔗 AAPKA DIRECT LINK (Smartlink) 🔗 -->
+    <h3>👇 Niche diye gaye link par click karein 👇</h3>
+    <a href="https://araplhn.org/4/915d01ef995e77cfa2f0a1cc58781089" class="btn" target="_blank" rel="nofollow">
+      Click Here
     </a>
 
-    <!-- Doosra Link (asiafilm) -->
-    <a href="https://asiafilm.org/4/e4841266e0f281cb34db9058248ab006" class="ad-button" target="_blank" rel="nofollow">
-      Click Here 2
-    </a>
   </div>
 
 </body>
