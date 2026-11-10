@@ -4,36 +4,80 @@
   <title>Waqas Ki Website</title>
   <style>
     body { 
-      font-family: Arial, sans-serif; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
       text-align: center; 
-      background-color: #222; 
+      background-color: #121212; /* Dark Theme */
       color: white; 
-      padding-top: 50px; 
+      padding-top: 40px; 
       margin: 0;
     }
-    h1 { color: #4CAF50; }
+    h1 { color: #4CAF50; margin-bottom: 5px; }
+    p.subtitle { color: #aaa; font-size: 14px; margin-bottom: 30px; }
+    
     .container {
-      max-width: 800px;
+      max-width: 500px;
       margin: 0 auto;
+      padding: 15px;
+    }
+
+    /* Ad Card Ka Design */
+    .ad-card {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 12px;
       padding: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      position: relative;
+      overflow: hidden;
     }
-    .ad-box {
-      margin: 30px auto;
-      background: #fff; /* Ad ka background white rakha hai taake clear dikhe */
-      border-radius: 8px;
-      padding: 10px;
-      display: inline-block;
+
+    /* "Ad" ka label */
+    .ad-label {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #333;
+      color: #ccc;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
     }
-    .btn {
-      display: inline-block;
-      background-color: #e50914; /* Red button */
-      color: white;
-      padding: 15px 40px;
-      text-decoration: none;
+
+    .ad-card h3 {
+      margin: 0 0 10px 0;
+      color: #fff;
       font-size: 18px;
-      border-radius: 50px;
-      margin-top: 20px;
+    }
+
+    .ad-card p {
+      color: #bbb;
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    /* Ad Button */
+    .ad-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 8px;
       font-weight: bold;
+      text-align: center;
+      box-sizing: border-box;
+      transition: 0.3s;
+    }
+
+    .ad-btn:hover {
+      background: linear-gradient(90deg, #ff4b2b, #ff416c);
+      transform: scale(1.02);
     }
   </style>
 </head>
@@ -41,22 +85,29 @@
 
   <div class="container">
     <h1>Assalam o Alaikum!</h1>
-    <p>Yeh meri pehli free website hai jo GitHub par live hai.</p>
+    <p class="subtitle">Welcome to my website</p>
 
-    <!-- 🖼️ NATIVE BANNER AD (Yeh automatically tasveer aur text show karega) 🖼️ -->
-    <div class="ad-box">
-      <script async="async" data-cfasync="false" src="https://bauval.org/21/7e8ec05885777dd5efe1e4fe13046c71"></script>
-      <div id="container-7e8ec05885777dd5efe1e4fe13046c71"></div>
+    <!-- 🟢 AD CARD 1 🟢 -->
+    <div class="ad-card">
+      <span class="ad-label">Sponsored</span>
+      <h3>🔥 Exclusive Offers!</h3>
+      <p>Click here to unlock special rewards and premium content. Limited time offer!</p>
+      <!-- Yahan apna Smartlink dalein -->
+      <a href="https://araplhn.org/4/915d01ef995e77cfa2f0a1cc58781089" class="ad-btn" target="_blank" rel="nofollow">
+        Claim Now ➔
+      </a>
     </div>
-    <!-- 🖼️ AD KHATAM 🖼️ -->
 
-    <br><br>
-
-    <!-- 🔗 AAPKA DIRECT LINK (Smartlink) 🔗 -->
-    <h3>👇 Niche diye gaye link par click karein 👇</h3>
-    <a href="https://araplhn.org/4/915d01ef995e77cfa2f0a1cc58781089" class="btn" target="_blank" rel="nofollow">
-      Click Here
-    </a>
+    <!-- 🟢 AD CARD 2 🟢 -->
+    <div class="ad-card">
+      <span class="ad-label">Sponsored</span>
+      <h3>🎁 Daily Prizes</h3>
+      <p>Spin the wheel and win amazing prizes today. Don't miss out!</p>
+      <!-- Yahan apna doosra Smartlink dalein -->
+      <a href="https://uplcm.com/4/12210216" class="ad-btn" target="_blank" rel="nofollow">
+        Play Now ➔
+      </a>
+    </div>
 
   </div>
 
